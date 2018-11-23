@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"github.com/spf13/viper"
 	"io/ioutil"
 	"log"
 	"os"
@@ -12,6 +11,8 @@ import (
 	"path/filepath"
 	"strings"
 	"syscall"
+
+	"github.com/spf13/viper"
 )
 
 const defaultFailedCode = 1
