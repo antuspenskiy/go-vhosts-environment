@@ -3,7 +3,9 @@ language: go
 matrix:
   include:
     - go: "1.11.x"
-      script: go test -v ./...
+      script:
+       - go test -v ./...
+       - go build ./...
 
 env:
   - GO111MODULE=on
