@@ -308,22 +308,22 @@ func main() {
 	switch branchCommitSHA {
 	case "":
 		switch *projectName {
-		case "portal-backend":
+		case "directoryA":
 			err = buildNoHashBranch(*projectName, *refSlug, *ciRepositoryURL, *commitSHA, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "portal-frontend":
+		case "directoryB":
 			err = buildNoHashBranch(*projectName, *refSlug, *ciRepositoryURL, *commitSHA, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "portal-admin":
+		case "directoryC":
 			err = buildNoHashBranch(*projectName, *refSlug, *ciRepositoryURL, *commitSHA, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "socket-server":
+		case "directoryD":
 			err = buildNoHashBranch(*projectName, *refSlug, *ciRepositoryURL, *commitSHA, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
@@ -336,22 +336,22 @@ func main() {
 		// de1234de == de1234de 8 digit commit hash matched!)
 	case hostCommitSHA:
 		switch *projectName {
-		case "portal-backend":
+		case "directoryA":
 			err = buildHashBranch(*projectName, *refSlug, matchDir, *ciRepositoryURL, *commitSHA, exists, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "portal-frontend":
+		case "directoryB":
 			err = buildHashBranch(*projectName, *refSlug, matchDir, *ciRepositoryURL, *commitSHA, exists, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "portal-admin":
+		case "directoryC":
 			err = buildHashBranch(*projectName, *refSlug, matchDir, *ciRepositoryURL, *commitSHA, exists, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "socket-server":
+		case "directoryD":
 			err = buildHashBranch(*projectName, *refSlug, matchDir, *ciRepositoryURL, *commitSHA, exists, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
@@ -361,22 +361,22 @@ func main() {
 		// (example branch name: 1-branch-ontest-de1234de)
 	default:
 		switch *projectName {
-		case "portal-backend":
+		case "directoryA":
 			err = buildHashBranch(*projectName, *refSlug, matchDir, *ciRepositoryURL, *commitSHA, exists, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "portal-frontend":
+		case "directoryB":
 			err = buildHashBranch(*projectName, *refSlug, matchDir, *ciRepositoryURL, *commitSHA, exists, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "portal-admin":
+		case "directoryC":
 			err = buildHashBranch(*projectName, *refSlug, matchDir, *ciRepositoryURL, *commitSHA, exists, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
 			}
-		case "socket-server":
+		case "directoryD":
 			err = buildHashBranch(*projectName, *refSlug, matchDir, *ciRepositoryURL, *commitSHA, exists, conf)
 			if err != nil {
 				log.Fatalf("Error: %s", err)
